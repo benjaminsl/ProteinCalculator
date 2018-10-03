@@ -142,19 +142,19 @@ body
 <tr>
 <td><strong>PROTEIN:</strong></td>
 <td id="protein_output_td">
-<span id="protein">0</span> g of lean protein per day.<br>
+<span id="protein">0</span> g of lean protein per day.<br> <em><span id="protein_factor"></span> </em>
 </td>
 </tr>
 <tr>
 <td><strong>CARBS (Training Day):</strong></td>
 <td id="carbs_output_td">
-<span id="carbs">0</span> g of starch carbs daily.<br> 
+<span id="carbs">0</span> g of starch carbs daily.<br> <em><span id="carb_factor"></span> </em>
 </td>
 </tr>
 <tr>
 <td><strong>CARBS (Active Rest Day):</strong></td>
 <td id="carbs2_output_td">
-<span id="carbs2">0</span> g of starch carbs daily.<br>
+<span id="carbs2">0</span> g of starch carbs daily.<br> <em><span id="carb2_factor"></span></em>
 </td>
 </tr>
 
@@ -277,9 +277,9 @@ function nutritioncalcFunction()
   document.getElementById("weight_output").innerHTML = weight; 	
   document.getElementById("week_output").innerHTML = week;	 	
   document.getElementById("lbm_output").innerHTML = lbm.toFixed(1); 	
-  document.getElementById("protein_factor").innerHTML = protein_factor; 	
-  document.getElementById("carb_factor").innerHTML = carb_factor; 
-  document.getElementById("carb2_factor").innerHTML = carb2_factor; 	
+  document.getElementById("protein_factor").innerHTML = ""; 	
+  document.getElementById("carb_factor").innerHTML = ""; 
+  document.getElementById("carb2_factor").innerHTML = ""; 	
   document.getElementById("protein").innerHTML = Math.round(protein,-2); 	
   document.getElementById("carbs").innerHTML = Math.round(carbs,-2); 
   document.getElementById("carbs2").innerHTML = Math.round(carbs2,-2); 	
